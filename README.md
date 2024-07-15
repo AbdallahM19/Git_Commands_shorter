@@ -1,6 +1,6 @@
-# FastGit Setup
+# QuickPush Setup
 
-This guide will help you set up a `fastgit` alias that allows you to quickly add, commit, and push changes to your git repository using a single command.
+This guide will help you set up a `quickpush` alias that allows you to quickly add, commit, and push changes to your git repository using a single command.
 
 ## What happen in Setup
 
@@ -23,10 +23,10 @@ This guide will help you set up a `fastgit` alias that allows you to quickly add
 
 ## Usage
 
-Once the alias is set up and sourced, you can use the `fastgit` command to add, commit, and push changes to your repository. Replace `"Your commit message"` with your actual commit message.
+Once the alias is set up and sourced, you can use the `quickpush` command to add, commit, and push changes to your repository. Replace `"Your commit message"` with your actual commit message.
 
 ```sh
-fastgit "Your commit message"
+quickpush "Your commit message"
 ```
 
 ## Example
@@ -38,14 +38,14 @@ Alias created successfully.
 root@linux:/Git_Commands_shorter# source ~/.bashrc
 root@linux:/Git_Commands_shorter# alias 
 alias egrep='egrep --color=auto'
-alias fastgit='python3 -u /Git_Commands_shorter/gitacp.py'
+alias quickpush='python3 -u /Git_Commands_shorter/gitacp.py'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
 alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -alF'
 alias ls='ls --color=auto'     
-root@linux:/Git_Commands_shorter# fastgit "first commit"
+root@linux:/Git_Commands_shorter# quickpush "first commit"
 
 [master (root-commit) repo] first commit
  3 files changed, 49 insertions(+)
@@ -61,6 +61,6 @@ Done Push!
 
 - `python3 -u create_alias.py`: This command runs the Python script that adds the alias to your `~/.bashrc`.
 - `source ~/.bashrc`: This command applies the changes to your current shell session.
-- `fastgit "first commit"`: This command stages all changes, commits them with the message "first commit", and pushes them to the master branch.
+- `quickpush "first commit"`: This command stages all changes, commits them with the message "first commit", and pushes them to the master branch.
 
-Enjoy using `fastgit` for quick and easy git operations!
+Enjoy using `quickpush` for quick and easy git operations!
