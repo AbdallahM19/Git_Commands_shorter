@@ -25,4 +25,5 @@ if __name__ == '__main__':
         print("Usage: python script.py <commit_message>")
         exit(1)
 
-    print(git_linux(argv[1]))
+    commit_text = " ".join(argv[1:])
+    print(git_linux(commit_text))
