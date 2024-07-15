@@ -13,7 +13,7 @@ def code_subfuntion_run(line):
 
 
 if __name__ == '__main__':
-    alias_command = f'alias fastgit=\'python3 -u "{os.getcwd()}/gitacp.py"\''
+    alias_command = f'alias quickpush=\'python3 -u "{os.getcwd()}/gitacp.py"\''
     command = f'echo "{alias_command}" >> ~/.bashrc'
     result = code_subfuntion_run(command)
     print("Alias created successfully.")
