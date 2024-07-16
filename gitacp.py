@@ -7,7 +7,7 @@ def git_linux(commit_message):
     commands = [
         'git add .',
         f'git commit -m "{commit_message}"',
-        'git push origin master'
+        'git push'
     ]
 
     for command in commands:
