@@ -27,7 +27,7 @@ def git_linux(commit_message):
         commands = [
             f'git add {files}',
             f'git commit -m "{message}"',
-            'git push origin master'
+            'git push'
         ]
 
         print("Adding files:")
