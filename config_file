@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo 'welcome in git config!'
+echo '---------------------------------'
+echo 'please enter your email - config:'
+read email
+echo '---------------------------------'
+echo 'please enter your name - config:'
+read name
+echo '---------------------------------'
+echo "Waiting..."
+echo '---------------------------------'
+
+echo "config_func() {
+    git config --global user.email \"${email}\"
+    git config --global user.name \"${name}\"
+}" >> ~/.bashrc
+echo "alias ${name}_config='config_func'" >> ~/.bashrc
+
+source ~/.bashrc
+
+echo "if the tool not working write in terminal \"source ~/.bashrc\" to work the tool"
+
+echo "Done :), tool name => ${name}_config"
